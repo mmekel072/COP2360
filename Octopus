@@ -1,0 +1,23 @@
+using System;
+
+class Octopus //parent class
+{
+  string name;
+  public int age = 10;
+  static readonly int legs = 8, eyes = 1;
+}
+
+class OctopusInherit : Octopus //Child Class Inherits Octopus
+{
+  public string OctopusName = "Bob";
+}
+
+class Module3Inheritance {
+    
+    static void Main (string[] args) {
+        
+        OctopusInherit myOctopus = new OctopusInherit();
+        
+        Console.WriteLine("Name of Octopus: " + myOctopus.OctopusName + "\n" + "Years Old: " + myOctopus.age);
+    }
+}
